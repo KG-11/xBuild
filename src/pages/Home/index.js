@@ -22,7 +22,12 @@ import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
 import './index.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = [
+  'For Real Estate',
+  'For Interiors',
+  'For Architects',
+  'For Designers',
+];
 
 const Home = () => {
   const { status } = useRouteTransition();
@@ -136,13 +141,13 @@ const Home = () => {
   }, [hash, state, prefersReducedMotion, status]);
 
   return (
+    // Edit the content here for changes in home page.
     <div className="home">
       <Helmet>
-        <title>Hamish Williams | Designer + Developer</title>
+        <title>xBuild Technologies</title>
         <meta
           name="description"
-          content="Portfolio of Hamish Williams – a digital designer working on web &amp; mobile
-          apps with a focus on motion and user experience design."
+          content="xBuild Technologies - VR based Architecture firm"
         />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />
@@ -158,8 +163,8 @@ const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Web Virtual Reality"
+        description="High auality browser compatible VR model of the property with customizable interior furnitures, textures and materials with Zero investment on VR headsets and hardwares."
         buttonText="View Project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -180,8 +185,8 @@ const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Websites for 3D products / assets."
+        description="Showcase your products / assets in high definition 3D models in your website. Our 3D modelling workflow is optimised for high speed and high quality rendering in browser."
         buttonText="View Website"
         buttonLink="https://gamestackapp.com"
         model={{
@@ -206,8 +211,8 @@ const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Drone Photogrammetry"
+        description="High resolution imaging and 3D reconstruction of structures, sites and landscapes"
         buttonText="View Project"
         buttonLink="/projects/slice"
         model={{

@@ -97,18 +97,18 @@
 .intro__title {
   display: flex;
   flex-direction: column;
-  font-size: calc((140 / 16) * 1rem);
+  font-size: 1rem;
   letter-spacing: -0.005em;
 
   @media (--mediaDesktop) {
     & {
-      font-size: calc((120 / 16) * 1rem);
+      font-size: 4rem;
     }
   }
 
   @media (--mediaLaptop) {
     & {
-      font-size: calc((100 / 16) * 1rem);
+      font-size: 4rem;
     }
   }
 
@@ -178,7 +178,7 @@
 
 .intro__title-word {
   position: relative;
-  display: flex;
+  display: block ruby;
   align-items: center;
   line-height: 1;
   animation-duration: 1.5s;
@@ -207,7 +207,7 @@
 }
 
 .intro__title-word--plus::before {
-  content: '+';
+  content: '–';
   margin-right: 10px;
   opacity: 0.4;
 }

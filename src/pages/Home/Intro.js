@@ -73,7 +73,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                 className={classNames('intro__name', `intro__name--${status}`)}
                 id={titleId}
               >
-                <DecoderText text="Hamish Williams" start={!prerender} delay={300} />
+                <DecoderText text="xBuild Technologies" start={!prerender} delay={300} />
               </h1>
               <Heading level={0} as="h2" className="intro__title">
                 <VisuallyHidden className="intro__title-label">{`Designer + ${introLabel}`}</VisuallyHidden>
@@ -90,7 +90,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                     )}
                     style={{ '--delay': tokens.base.durationXS }}
                   >
-                    Designer
+                    Virtual Reality
                   </span>
                   <span
                     className={classNames(
@@ -120,7 +120,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                             'intro__title-word--plus',
                             `intro__title-word--${wordStatus}`
                           )}
-                          style={{ '--delay': tokens.base.durationL }}
+                          style={{ '--delay': tokens.base.durationXS }}
                         >
                           {item}
                         </span>
